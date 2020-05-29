@@ -14,8 +14,8 @@ class DatabaseSeeder extends Seeder
         DB::table('admin_menu')->insert([
             'parent_id' => 0,
             'order' => 0,
-            'title' => 'Posts'
-            'icon'	=> 'fa-bars'
+            'title' => 'Posts',
+            'icon'	=> 'fa-bars',
             'uri'	=>  'http://localhost:8000/admin/posts',
             'permission' => null,
             'created_at' => null,
