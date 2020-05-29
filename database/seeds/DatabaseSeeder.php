@@ -21,5 +21,16 @@ class DatabaseSeeder extends Seeder
             'created_at' => null,
             'updated_at' => null
         ]);
+
+        DB::table('admin_menu')->insert([
+            'parent_id' => 0,
+            'order' => 0,
+            'title' => 'Comments',
+            'icon'	=> 'fa-bars',
+            'uri'	=>  'http://localhost:8000/admin/comments',
+            'permission' => null,
+            'created_at' => null,
+            'updated_at' => null
+        ]);
     }
 }
